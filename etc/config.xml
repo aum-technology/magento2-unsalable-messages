@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <unsaleable>
+            <general>
+                <module_status>1</module_status>
+            </general>
+            <messages>
+                <cart_item_specific_message>Only {{qty}} Available!</cart_item_specific_message>
+                <cart_specific_message_for_lower_qty>These SKUs are having lower quantity than required! SKUs : {{skus}}</cart_specific_message_for_lower_qty>
+                <cart_item_out_of_stock>Currently Unavailable!</cart_item_out_of_stock>
+                <reupdate_cart>Requested Quantity Not Available For Below SKU(s)!</reupdate_cart>
+                <cart_message_for_out_of_stock>Some of the products are out of stock.</cart_message_for_out_of_stock>
+            </messages>
+        </unsaleable>
+    </default>
+</config>

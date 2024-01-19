@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\InventorySales\Model\IsProductSalableForRequestedQtyCondition\IsAnySourceItemInStockCondition" type="AumTechnology\Unsaleable\Preference\Model\IsProductSalableForRequestedQtyCondition\IsAnySourceItemInStockCondition"/>
+    <preference for="Magento\InventorySales\Model\IsProductSalableForRequestedQtyCondition\IsSalableWithReservationsCondition" type="AumTechnology\Unsaleable\Preference\Model\IsProductSalableForRequestedQtyCondition\IsSalableWithReservationsCondition"/>
+    <preference for="Magento\CatalogInventory\Model\Quote\Item\QuantityValidator" type="AumTechnology\Unsaleable\Preference\Model\Quote\Item\QuantityValidator"/>
+    <preference for="Magento\Checkout\Controller\Cart\UpdatePost" type="AumTechnology\Unsaleable\Preference\Controller\Cart\UpdatePost"/>
+    <preference for="Magento\Checkout\Model\Cart" type="AumTechnology\Unsaleable\Preference\Model\Cart"/>
+    <preference for="Magento\Checkout\Controller\Cart\UpdateItemQty" type="AumTechnology\Unsaleable\Preference\Controller\Cart\UpdateItemQty"/>
+</config>

@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="aumtechnology" translate="label" sortOrder="999">
+            <label>Aum Technology</label>
+        </tab>
+        <section id="unsaleable" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Unsaleable Message</label>
+            <tab>aumtechnology</tab>
+            <resource>AumTechnology_Unsalable::config_aumtechnology_unsalable</resource>
+            <group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>General</label>
+                <field id="module_status" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Module Status</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+            </group>
+            <group id="messages" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Messages</label>
+                <field id="cart_item_specific_message" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Cart Item Specific Message</label>
+                    <comment>Example : Only {{qty}} Available!</comment>
+                </field>
+                <field id="cart_specific_message_for_lower_qty" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Cart Specific Message For Lower Qty</label>
+                    <comment>Example : These SKUs are having lower quantity than required! SKUs : {{skus}}</comment>
+                    <comment/>
+                </field>
+                <field id="cart_item_out_of_stock" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Cart Item Out Of Stock Message</label>
+                    <comment>Example : Currently Unavailable!</comment>
+                    <comment/>
+                </field>
+                <field id="reupdate_cart" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>After Cart Update Message</label>
+                    <comment>Example : Currently Unavailable!</comment>
+                    <comment/>
+                </field>
+                <field id="cart_message_for_out_of_stock" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Cart Message For Out Of Stock</label>
+                    <comment>Example : Some of the products are out of stock.</comment>
+                    <comment/>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
